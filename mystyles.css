@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fix
+{
+  background-color: #262626;
+  clear: both;
+  overflow: hidden;
+}
+header
+{
+  overflow: hidden;
+  height: 95vh;
+  clip-path: polygon(0 0,100% 0,100% 80vh,50% 100%,0 80vh);
+  
+}
+.vid-bg
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body
+{
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bgi.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.menu-area
+{
+    padding-left: 792px;
+    list-style: none;
+    margin-top: 20px;
+}
+.menu-area li
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+.menu-area li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 16px;
+    letter-spacing: 2px;
+}
+.menu-area li a:hover
+{
+    background-color: #fff;
+    color: black;
+    transition: 0.6s;
+}
+.scroll
+{
+  
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.scroll li
+{
+  list-style: none;
+  padding-bottom: 20px;
+}
+.scroll li a
+{
+  list-style: none;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  background-color: rgba(0,0,0,0.4) ;
+  width: 140px;
+  color: #fff;
+  margin: 4px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.scroll li a:hover
+{
+  background: #fff;
+  color: black;
+}
+.logo
+{
+    float: left;
+    padding-left: 10px;
+}
+
+.main
+{
+  
+  position: absolute;
+    max-width: 1500px;
+    margin: auto;
+}
+p,label
+{
+    color: wheat;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 30px;
+}
+h1 span
+{
+  color: tomato;
+}
+h2
+{
+    color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding-left: 30px;
+}
+.title
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.create
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    padding: 40px;
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.create input[type="submit"]
+{
+  background: transparent;
+  border: none;
+  color: #fff;
+  background: #03a9f4;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+}
+.gallery
+{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 5px;
+    border: 5px solid tomato;
+}
+.about
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    border: 5px solid tomato;
+}
+.ceo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: grey;
+    border: 5px solid blue;
+    left: 30px;
+    right: 30px;
+    position: absolute;
+}
+.bg-ceo
+{
+  background-color: #151B17;;
+}
+.title h1
+{
+    color: white;
+    font-size: 100px;
+   
+}
+.button
+{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.btn
+{
+    
+    padding: 20px 60px;
+    color: white;
+    font-size: 20px;
+}
+.button a:hover
+{
+    background-color: #fff;
+    color: black;
+    transition: 0.6s;  
+}
+.scrolldown
+{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+.scrolldown span:nth-child(1)
+{
+  transform: translate(-15px,-15px);
+  animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2)
+{
+  transform: translate(0,0);
+  animation-delay: 0s;
+}
+.scrolldown span:nth-child(3)
+{
+  transform: translate(15px,15px);
+  animation-delay: -0.4s;
+}
+@keyframes animate
+{
+  0%
+  {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25%
+  {
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  100%
+  {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+.tag h2
+{
+  font-size: 80px;
+}
+p,h5
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding-left: 30px;
+}
+video
+{
+    border:2px solid tomato;
+    
+}
+h4
+{
+    color: yellowgreen;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: white;
+  }
+  
+  /* Fading animation */
+  .fade {
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    padding-left: 15%;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightseagreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: tomato;}
+
+  .apk img
+  {
+    height: 80px;
+    width: 160px;
+  }
+.vid
+{
+  background: linear-gradient(rgba(12,0,50),rgba(12,0,50));
+}
+.vidi
+{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+.theme
+{
+  background-color: #00121b;
+}
+.news
+{
+  background-color: rgba(0,0,0,0.8);
+}
+td
+{
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  
+}
+th
+{
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+.text-container h6
+{
+  font-size: 150px;
+  color: rgba(225,225,225,1);
+  background-image: url(url.jpg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 15s linear infinite;
+}
+      @keyframes animate {
+        0%{
+          background-position: left 0px top 10px;
+        }
+        40%{
+          background-position: left 800px top 10px;
+        }
+      
+}      
+.text-container
+{
+  text-align: center;
+}
+.text-container h6 span
+{
+  color: tomato;
+}
