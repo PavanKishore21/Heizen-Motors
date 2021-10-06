@@ -1,0 +1,23 @@
+{
+  "name": "heizen-motors",
+  "version": "1.0.0",
+  "description": "Car dealer ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavanKishore21/Heizen-Motors.git"
+  },
+  "author": "Pavan Kishore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavanKishore21/Heizen-Motors/issues"
+  },
+  "homepage": "https://github.com/PavanKishore21/Heizen-Motors#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
